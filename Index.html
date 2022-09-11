@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="hypno.css">
+    <title>Bimbo Bliss</title>
+</head>
+
+<body id="bodyID" class="bodyClass" style="background-color: #FF52B7;">
+    <div id="mainBlock" class="mainBlock">
+        <img src="imgs/0.gif" class="mainImage" id="mainImage">
+        <img src="imgs/1.gif" class="leftImage" id="leftImage">
+        <img src="imgs/2.gif" class="rightImage" id="rightImage">
+    </div>
+    <script>
+        let backgroundToggle = true
+        function changeBackgroundColor() {
+            backgroundToggle = !backgroundToggle
+            if (backgroundToggle == true) {
+                document.getElementById("bodyID").style.backgroundColor = "#FF52B7";
+            } else {
+                document.getElementById("bodyID").style.backgroundColor = "#FF0095";
+            }
+        }
+        let borderToggle = true
+        function changeBorderColor() {
+            borderToggle = !borderToggle
+            if (borderToggle == true) {
+                document.getElementById("mainBlock").style.borderColor = "#000000";
+            } else {
+                document.getElementById("mainBlock").style.borderColor = "#FFFFFF";
+            }
+        }
+        function changeImage(){
+            document.getElementById('leftImage').src = "imgs/" + Math.floor(Math.random() * 49) + ".gif"
+            document.getElementById('mainImage').src = "imgs/" + Math.floor(Math.random() * 49) + ".gif"
+            document.getElementById('rightImage').src = "imgs/" + Math.floor(Math.random() * 49) + ".gif"
+        }
+        setInterval(changeBackgroundColor, 1500)
+        setInterval(changeBorderColor, 500)
+        setInterval(changeImage, 7000)
+    </script>
+</body>
+
+</html>

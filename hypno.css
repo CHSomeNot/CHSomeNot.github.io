@@ -1,0 +1,47 @@
+.mainBlock {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 15px solid;
+    border-color: #FFFFFF;
+    transition: border-color 0.8s;
+}
+
+.bodyClass {
+    transition: background-color 3s;
+}
+
+.mainImage {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 10px solid;
+    border-color: #FFFFFF;
+}
+
+.rightImage {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 10px solid;
+    border-color: #FFFFFF;
+}
+
+.leftImage {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 10px solid;
+    border-color: #FFFFFF;
+}
